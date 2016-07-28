@@ -1,8 +1,8 @@
 'use strict';
 
-let AppError = module.exports = exports = function(message, error, responseMessage){
+let AppError = module.exports = exports = function(message, statusCode, responseMessage){
   this.message = message;
-  this.error = error;
+  this.statusCode = statusCode;
   this.responseMessage = responseMessage;
 };
 
