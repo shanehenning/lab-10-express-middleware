@@ -5,14 +5,12 @@ const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 const expect = chai.expect;
 const request = chai.request;
-// const server = require('../lib/_server.js');
 const port = 5000;
 
 describe('CRUD API (with Express!) ', () => {
   let server;
   before(function(done) {
     server = require('../lib/_server.js');
-    // server.listen(port);
     done();
   });
 
